@@ -44,6 +44,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         bottomTextField.defaultTextAttributes = memeTextAttributes
         bottomTextField.textAlignment = NSTextAlignment.center
         imagePickerView.contentMode = .scaleAspectFit
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,6 +80,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     @IBAction func cancel(_ sender: Any) {
         imagePickerView.image = nil
+        self.viewDidLoad()
     }
     
     //MARK: Meme functions

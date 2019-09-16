@@ -20,8 +20,11 @@
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="v06-Yv-enU">
                                 <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="X7w-SU-Je1"/>
+                                </constraints>
                                 <items>
-                                    <barButtonItem title="Share" id="P0j-Sv-30D">
+                                    <barButtonItem image="icons8-share-rounded-30" style="plain" id="P0j-Sv-30D">
                                         <connections>
                                             <action selector="shareMeme:" destination="BYZ-38-t0r" id="UBc-al-oZg"/>
                                         </connections>
@@ -35,10 +38,13 @@
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="9FQ-LA-dhq">
-                                <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Vyw-3D-oxK"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6uM-tq-Ojb"/>
-                                    <barButtonItem title="Camera" id="ORm-61-E3A">
+                                    <barButtonItem image="icons8-camera-30" id="ORm-61-E3A">
                                         <connections>
                                             <action selector="useImageFromCamera:" destination="BYZ-38-t0r" id="m9c-Xs-96d"/>
                                         </connections>
@@ -53,10 +59,10 @@
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="501" verticalHuggingPriority="501" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="700" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-wm-ZQ4">
-                                <rect key="frame" x="20" y="98" width="374" height="700"/>
+                                <rect key="frame" x="20" y="98" width="374" height="720"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssm-iQ-yR4">
-                                <rect key="frame" x="202.5" y="767" width="9" height="21"/>
+                                <rect key="frame" x="202.5" y="787" width="9" height="21"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -72,7 +78,6 @@
                             <constraint firstItem="9FQ-LA-dhq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8l3-eS-Y5i"/>
                             <constraint firstItem="nR1-wm-ZQ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BH1-QK-ifw"/>
                             <constraint firstItem="9FQ-LA-dhq" firstAttribute="top" secondItem="nR1-wm-ZQ4" secondAttribute="bottom" id="D4D-Dt-EWL"/>
-                            <constraint firstItem="nR1-wm-ZQ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E7K-rg-6tL"/>
                             <constraint firstItem="v06-Yv-enU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCu-f9-Suh"/>
                             <constraint firstItem="jnA-rK-E5g" firstAttribute="top" secondItem="nR1-wm-ZQ4" secondAttribute="top" constant="10" id="KJz-a5-jxy"/>
                             <constraint firstItem="Ssm-iQ-yR4" firstAttribute="bottom" secondItem="nR1-wm-ZQ4" secondAttribute="bottom" constant="-10" id="QdG-X1-WFf"/>
@@ -104,4 +109,8 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-camera-30" width="30" height="30"/>
+        <image name="icons8-share-rounded-30" width="30" height="30"/>
+    </resources>
 </document>
