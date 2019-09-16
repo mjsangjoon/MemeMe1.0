@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v06-Yv-enU">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="v06-Yv-enU">
                                 <rect key="frame" x="0.0" y="54" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="Share" id="P0j-Sv-30D">
@@ -34,7 +34,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FQ-LA-dhq">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="9FQ-LA-dhq">
                                 <rect key="frame" x="0.0" y="798" width="414" height="64"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6uM-tq-Ojb"/>
@@ -52,7 +52,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="XO6-Hs-y5q"/>
                                 </items>
                             </toolbar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-wm-ZQ4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="501" verticalHuggingPriority="501" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="700" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-wm-ZQ4">
                                 <rect key="frame" x="20" y="98" width="374" height="700"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssm-iQ-yR4">
